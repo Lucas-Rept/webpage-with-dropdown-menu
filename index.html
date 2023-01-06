@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+
+  <div id="top-bar">
+    <img src="./images/logo.svg" alt="logo snap">
+
+    <nav>
+      <ul class="left-list">
+        <li>
+          <div class="dropdown-activer">Features <img src="./images/icon-arrow-down.svg" alt="arrow" class="arrow">
+            <div class="dropdown-container dpc-1">
+              <ul class="features-list">
+                <li><img src="./images/icon-todo.svg" alt="todo icon">
+                  <p>Todo list</p>
+                </li>
+                <li><img src="./images/icon-calendar.svg" alt="calendar icon">
+                  <p>Calendar</p>
+                </li>
+                <li><img src="/images/icon-reminders.svg" alt="reminders icon">
+                  <p>Reminders</p>
+                </li>
+                <li><img src="./images/icon-planning.svg" alt="planning icon">
+                  <p>Planning</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="dropdown-activer">Company <img src="./images/icon-arrow-down.svg" alt="arrow" class="arrow">
+          <div class="dropdown-container dpc-2">
+            <ul class="features-list">
+              <li>
+                <p>History</p>
+              </li>
+              <li>
+                <p>Our team</p>
+              </li>
+              <li>
+                <p>Blog</p>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li>Careers</li>
+        <li>About</li>
+      </ul>
+    
+
+    <ul class="right-list">
+      <li>Login</li>
+      <li><button class="register-button">Register</button></li>
+    </ul>
+  </nav>
+
+
+  <div class="darken">
+    <div id="mobile-nav">
+      <ul>
+        <img id="closer" src="images/icon-close-menu.svg" alt="close menu">
+        <li>
+          <div class="m-drop hover">Features <img src="./images/icon-arrow-down.svg" alt="arrow" class="m-arrow"></div>
+          <div class="droper">
+            <p> <img src="./images/icon-todo.svg" alt="todo icon"> Todo list</p>
+            <p> <img src="./images/icon-calendar.svg" alt="calendar icon">  Calendar</p>
+            <p> <img src="./images/icon-reminders.svg" alt="reminders icon">  Reminders</p>
+            <p> <img src="./images/icon-planning.svg" alt="planning icon"> Planning</p>
+          </div>
+        </li>
+        <li>
+          <div class="m-drop hover">Company <img src="./images/icon-arrow-down.svg" alt="arrow" class="m-arrow"></div>
+          <div class="droper">
+            <p>History</p>
+            <p>Our Team</p>
+            <p>Blog</p>
+          </div>
+        </li>
+        <li class="hover">Carrers</li>
+        <li class="hover">About</li>
+        <li class="center">Login</li>
+        <li><button class="register-button center">Register</button></li>
+      </ul>
+    </div>
+  </div>
+
+
+  <img class="nav-toggle" id="navToggler" src="images/icon-menu.svg" alt="menu toggle">
+  </div>
+
+  <main>
+    <section>
+      <div class="info">
+        <h1>Make
+          remote work</h1>
+        <p>
+          Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.
+        </p>
+        <button>Learn more</button>
+      </div>
+      <div class="bottom-images">
+        <img src="./images/client-databiz.svg" alt="databiz logo">
+        <img src="./images/client-audiophile.svg" alt="audiophile logo">
+        <img src="./images/client-meet.svg" alt="meet logo">
+        <img src="./images/client-maker.svg" alt="maker logo">
+      </div>
+    </section>
+
+    <picture class="hero-img">
+      <source media="(max-width: 950px)" srcset="images/image-hero-mobile.png">
+      <img class="desktop-img" src="./images/image-hero-desktop.png" alt="hero photo">
+    </picture>
+  </main>
+
+
+  <script src="./scripts/script.js"></script>
+
+</body>
+
+</html>

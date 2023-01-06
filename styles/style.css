@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Epilogue', Arial, Helvetica, sans-serif;
+    background-color: hsl(0, 0%, 98%);
+}
+
+#top-bar{
+    display: flex;
+    align-items: center;
+    min-height: 5rem;
+    padding: 0px 2rem 0px 2rem;
+    margin-bottom: 1.5rem;
+}
+
+ul{
+    list-style: none;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.left-list, .right-list{
+    display: flex;
+    color: hsl(0, 0%, 40%);
+    font-size: 14px;
+}
+
+
+.left-list{
+    margin-left: 4.5rem;
+    margin-right: auto;
+}
+
+.left-list > li{
+    margin-right: 3rem;
+    cursor: pointer;
+    position: relative;
+}
+
+.left-list > li:hover {
+    color: #151515;
+}
+
+.features-list{
+    color: hsl(0, 0%, 40%);
+}
+
+
+.arrow{
+    transition: 0.1s;
+    position: relative;
+    left: 5px;
+    bottom: 1px;
+}
+
+.m-arrow{
+    transition: 0.1s;
+}
+
+.arrow-active{
+    transition: 0.1s;
+    rotate: 180deg;
+}
+
+
+.right-list{
+    align-items: center;
+}
+
+.right-list li{
+    cursor: pointer;
+}
+
+.right-list li:hover{
+    color: #151515;
+}
+
+.right-list li{
+    margin-left: 3rem;
+}
+
+.register-button{
+    transition: 0.3s;
+    border: none;
+    font-size: 1rem;
+    background-color: white;
+    border: 1px solid hsl(0, 0%, 40%);
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    color: hsl(0, 0%, 40%);
+    cursor: pointer;
+}
+
+.register-button:hover{
+    transition: 0.3s;
+    border-color: #151515;
+    color: #151515;
+}
+
+main{
+    display: flex;
+    width: calc(100% - 15rem);
+    margin: auto;
+    justify-content: space-between;
+    margin-bottom: 7rem;
+}
+
+main section{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+}
+
+.info{
+    margin-bottom: auto;
+}
+
+
+h1{
+    margin-top: 4rem;
+    font-size: 5rem;
+    margin-bottom: 3rem;
+    white-space: pre-line;
+    color: #151515;
+}
+
+.info p{
+    width: 70%;
+    line-height: 25px;
+    color: hsl(0, 0%, 40%);
+}
+
+.info button{
+    margin-top: 3rem;
+    background-color: #151515;
+    color: white;
+    font-size: 18px;
+    padding: 15px 25px 15px 25px;
+    border-radius: 20px;
+    border: none;
+    font-weight: bolder;
+    border: solid 1px black;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: 2rem;
+}
+
+
+.hero-img{
+    width: 40%;
+    align-self: center;
+}
+
+.desktop-img{
+    width: 100%;
+}
+
+
+
+.bottom-images{
+    width: 75%;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-container{
+    display: none;
+    background-color: white;
+    padding: 1.5rem;
+    position: absolute;
+    top: calc(100% + 20px);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.223);
+    border-radius: 10px;
+    right: -5%;
+}
+
+.dropdown-container li{
+    margin-bottom: 15px;
+    transition: 0.3s;
+}
+
+.dropdown-container li:hover{
+    color: black;
+    transition: 0.3s;
+
+}
+
+.features-list li{
+    display: flex;
+    align-items: center;
+}
+
+.features-list li:last-of-type{
+    margin-bottom: 0;
+}
+
+.features-list > li img{
+    margin-right: 10px;
+}
+
+.show{
+    display: block;
+}
+
+
+.showf{
+    display: flex;
+}
+
+.dpc-2{
+    right: -10px;
+    width: 70px;
+}
+
+.info button:hover{
+    transition: 0.3s;
+    background-color: hsl(0, 0%, 98%);
+    color: black;
+}
+
+.nav-toggle{
+    display: none;
+}
+
+#mobile-nav{
+    background-color: hsl(0, 0%, 98%);
+    position: fixed;
+    right: 0;
+    color: hsl(0, 0%, 40%);
+    top: 0;
+    height: 100vh;
+    width: 245px;
+    transform: translateX(100%);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#mobile-nav p:hover{
+    transition: 0.1s;
+    color: black;
+    cursor: pointer;
+}
+
+.hover:hover{
+    transition: 0,1s;
+    color: #151515;
+    cursor: pointer;
+}
+
+@keyframes slide {
+    from{
+        transform: translateX(100%);
+    }    
+    to{
+        transform: translateX(0);
+    }
+}
+
+.slideIn{
+    display: none;
+    animation-name: slide;
+    animation-duration: 0.3s;
+    animation-fill-mode: both;
+}
+
+
+#closer{
+    display: block;
+    margin-left: auto;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+
+.droper{
+    max-height: 0px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.droper p{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.droper p:last-of-type{
+    margin-bottom: 0;
+}
+
+.droper-active{
+    max-height: 160px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    transition: 0.5s;
+}
+
+.m-drop{
+    cursor: pointer;
+}
+
+#mobile-nav li{
+    margin-bottom: 10px;
+}
+
+.center{
+    text-align: center;
+    margin: auto;
+    display: block;
+    margin-top: 20px;
+}
+
+.center:hover{
+    color: black;
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 950px){
+
+    nav{
+        display: none;
+    }
+
+    .slideIn{
+        display: block;
+    }
+
+    .right-list, .left-list{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    main{
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .hero-img{
+        width: 100%;
+    }
+
+    .info p, .bottom-images{
+        width: 100%;
+    }
+
+    .info p{
+        text-align: center;
+    }
+
+    main section{
+        width: 90%;
+    }
+
+    .darken{
+        background-color: #15151574;
+        width: 100%;
+        height: 100vh;
+        position:fixed;
+        z-index: 0;
+        top: 0;
+        left: 0;
+        display: none;
+    }
+
+    .info button{
+        margin: auto;
+        display: block;
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+    }
+
+    h1{
+        font-size: 2.5rem;
+        white-space: normal;
+        text-align: center;
+        margin-bottom: 1.4rem;
+    }
+
+    .bottom-images{
+        flex-wrap: wrap;
+    }
+
+    .bottom-images img{
+        width: 20%;
+    }
+
+    main{
+        margin-bottom: 4rem;
+    }
+
+    .nav-toggle{
+        display: block;
+        margin-left: auto;
+        cursor: pointer;
+    }
+}
